@@ -48,7 +48,7 @@ module.exports = {
 
         /** This use for split the file of style */
         use: [MiniCssExtractPlugin.loader, "css-loader"],
-        
+
         /** This use for signle bundle file */
         // use: [
         //   // fallback to style-loader in development
@@ -58,7 +58,6 @@ module.exports = {
         //   "css-loader",
         //   "sass-loader",
         // ],
-
       },
     ],
   },
@@ -66,7 +65,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/index.html",
     }),
-    
+
     // this use for load the plugin
     new MiniCssExtractPlugin(),
 
